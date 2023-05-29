@@ -1,0 +1,78 @@
+baseURL = ""
+theme = "risotto"
+title = "Humans Affect Climate"
+author = "Peter Bui"
+copyright = "© 2022–2023"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+pygmentsCodefences = true
+ 
+pygmentsUseClasses = false               # Use CSS instead of inline styling
+pygmentsStyle = "monokai"                  # Inline style to use
+pygmentsCodefencesGuessSyntax = true     # Guess language if not provided
+pygmentsUseClassic = false               # Use pygments instead of chroma
+pygmentsOptions = "linenos=true"         # Parameters to pass to pygments
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+body_classes = "ubuntu"
+
+[params.theme]
+palette = "gruvbox-dark"
+
+
+[params.about]
+title = "Hello"
+description = "I am Peter Bui, a student at University of Washington that researched topics on Climate Change on a global scale and how the environment has been affected by humans."
+logo = "images/rice.svg"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "sources"
+    name = "Sources"
+    url = "/sources/"
+    weight = 10
+
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+    unsafe = true
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]

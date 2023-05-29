@@ -1,0 +1,8 @@
+name = "risotto"
+description = "A minimalist, responsive theme inspired by terminal ricing aesthetics."
+
+tags = ["responsive", "minimal", "dark mode"]
+features = []
+min_version = "0.41.0"
+
+

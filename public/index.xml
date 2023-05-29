@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Humans Affect Climate</title>
+    <link>/</link>
+    <description>Recent content on Humans Affect Climate</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2022–2023</copyright><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/sources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/sources/</guid>
+      <description>Sources &amp;amp; Links
+https://climate.nasa.gov/vital-signs/sea-level/
+https://www.climate.gov/news-features/understanding-climate/climate-change-global-sea-level
+https://climatecommunication.yale.edu/visualizations-data/half-americans-think-global-warming-mostly-human-caused/
+https://datahub.io/collections/climate-change
+https://www.genevaenvironmentnetwork.org/resources/updates/plastics-and-climate/
+https://populationconnection.org/resources/population-and-climate/
+https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature
+https://www.ucsusa.org/resources/climate-change-and-population
+https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health
+https://climate.nasa.gov/causes/
+https://www.epa.gov/climatechange-science/causes-climate-change
+https://climatedata.imf.org/pages/climatechange-data
+https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data</description>
+    </item>
+    
+  </channel>
+</rss>
