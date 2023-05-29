@@ -1,4 +1,4 @@
 ---
 layout: default
-title: Peter Bui - CSE 455 Final Project
+title: CSE 455 Final Project
 ---
