@@ -115,7 +115,7 @@ In the initial training of the ResNet152 model, I chose to maintain a similar pr
 
 ![Graph2](graph2.png)
 
-During our preprocessing, a significant modification I made was resizing the images to 224x224 pixels. I discovered through research that the ResNet model had been trained on images of this resolution. Additionally, I adjusted the padding to 16 and changed the batch size to 32 to accommodate the change in resolution. Another decision I made was to normalize the images during dataset loading. This adjustment consistently improved our accuracy and ultimately yielded better results.
+During the preprocessing, a significant modification I made was resizing the images to 224x224 pixels. I discovered through research that the ResNet model had been trained on images of this resolution. Additionally, I adjusted the padding to 16 and changed the batch size to 32 to accommodate the change in resolution. Another decision I made was to normalize the images during dataset loading. This adjustment consistently improved our accuracy and ultimately yielded better results.
 
 # Final Results & Submissions
 
