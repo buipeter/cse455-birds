@@ -132,3 +132,11 @@ Furthermore, I made the decision to normalize the images during the dataset load
 ![submissions](submissions.png)
 
 # Closing Thoughts
+
+One of the initial challenges I faced involved preparing the dataset for usability. While loading the data was relatively simple, I encountered difficulties during training as the notebook kernel would occasionally crash due to an error related to tensor shape.
+
+A major challenge I encountered was the limited availability of GPU resources in different notebooks. When I began the competition, I utilized both Kaggle and Google Colab as my preferred platforms for conducting Machine Learning tasks.
+
+In the Kaggle notebook, I managed to run the code successfully but noticed a significant decrease in performance without an accelerator. Additionally, I faced some difficulties as I was unfamiliar with working within the Kaggle notebook, which required me to make certain adjustments to my code.
+
+This led me to utilize my personal GPU on my computer, which turned out to be the best option. By leveraging my GPU, I could overcome the limitations of GPU resources and achieve better performance compared to the other notebooks. During training, I noticed that the training time was only about 1/5th of the time compared to the other notebooks.
