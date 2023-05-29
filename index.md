@@ -73,7 +73,7 @@ def predict(net, dataloader, ofname):
             out.write("test/{},{}\n".format(fname.split('/')[-1], data['to_class'][predicted.item()]))
     out.close()
 
-net = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
+net = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True)
 net.fc = nn.Linear(512, 555)
 state = torch.load(checkpoints + 'checkpoint-10.pk1')
 net.load_state_dict(state['net'])
