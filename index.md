@@ -13,9 +13,29 @@ In our project, I initially utilized Google Colab as our working environment for
 
 I decided to train and utilize a learning model to classify 10,000 images of birds from a dataset provided by the biannual [Bird Classification Kaggle Competition](https://www.kaggle.com/competitions/birds23sp/data). However, this begged the question: which model should I use to achieve a desired level of classification and how should I adjust this model to perform optimally and accurately?
 
+# Personal Computer Specs
+I figured that going into this project, my computer was sustainable enough to run its own training rather than using the Google Colab of which limited my GB usage, of which included were:
+
+* GeForce RTX 3080Ti
+* Ryzen 9 5950X
+* DDR4 4000mhz 32gb
+
 # How It Started
 
 I began by using the Google Colab as the environment for training my model. I used the dataset that was provided by us from the kaggle website, from then I utilized our code from the classes Pytorch Tutorial to load the dataset and resized the images resolution to 128 pixel by 128 pixel. I kept the training batch size to 128, which was the same as the Pytorch's tutorial, and then modified the model to run for 6 epochs with a learning rate of 0.01 then decreasing to 0.001 after the fifth epoch and a decay of 0.0005. This was the very inital start of the testing that I took so that I could grasp the numbers and the length of each epoch's training.
+
+To start, we would catch the dataset and by doing so, I would use a lot of command lines to load my kaggle.json file to generate the dataset
+```
+Import Kaggle Dataset
+! pip install -q kaggle
+! mkdir ~/.kaggle
+! cp kaggle.json ~/.kaggle/
+! chmod 600 ~/.kaggle/kaggle.json
+! kaggle competitions download -c birds23sp
+! mkdir 'checkpoints'
+# Create checkpoints folder to save models
+checkpoints = '/workspace/checkpoints'
+```
 
 ```
 def get_bird_data(augmentation=0):
@@ -80,4 +100,9 @@ net.load_state_dict(state['net'])
 
 predict(net, data['test'], checkpoints + "preds.csv")
 ```
+
+# How It is Going
+
+After awhile, I swapped around the numbers and tinkered with the amount of epochs I used 
+
 ![Graph](graph.png)
