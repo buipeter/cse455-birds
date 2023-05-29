@@ -125,6 +125,8 @@ In my preprocessing, a notable change I made was resizing the images to 224x224 
 
 Furthermore, I made the decision to normalize the images during the dataset loading process. However, I observed that this led to a decrease in accuracy. Nevertheless, the consistency in the results obtained with this normalization approach ultimately contributed to better overall performance.
 
+![loss](loss.png)
+
 # Final Results & Submissions
 
 ![submissions](submissions.png)
