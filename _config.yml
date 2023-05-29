@@ -1,1 +1,7 @@
-theme: jekyll-theme-Cayman
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+title: Peter Bui - CSE 455 Final Project
+url: 'https://buipeter.github.io/'
+baseurl: 'cse455-birds'
