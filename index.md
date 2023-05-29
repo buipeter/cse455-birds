@@ -117,6 +117,16 @@ In the initial training of the ResNet152 model, I chose to maintain a similar pr
 
 During the preprocessing, a significant modification I made was resizing the images to 224x224 pixels. I discovered through research that the ResNet model had been trained on images of this resolution. Additionally, I adjusted the padding to 16 and changed the batch size to 32 to accommodate the change in resolution. Another decision I made was to normalize the images during dataset loading. This adjustment consistently improved our accuracy and ultimately yielded better results.
 
+The first ResNet152 training with adjusted value ran a total of 6 epochs at learning rate .001 and decay of 0.0005
+
+The second round of ResNet152 model training with adjusted value ran a total of 7 epochs at learning rate .001 and a decay of 0.0005
+
+In my preprocessing, a notable change I made was resizing the images to 224x224 pixels. This adjustment was based on further research, which revealed that the ResNet model had been trained on images with this resolution. Additionally, I modified the padding to be 16 and adjusted the batch size to 32 to accommodate the change in resolution.
+
+Furthermore, I made the decision to normalize the images during the dataset loading process. However, I observed that this led to a decrease in accuracy. Nevertheless, the consistency in the results obtained with this normalization approach ultimately contributed to better overall performance.
+
 # Final Results & Submissions
 
 ![submissions](submissions.png)
+
+# Closing Thoughts
