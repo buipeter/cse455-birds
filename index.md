@@ -80,3 +80,4 @@ net.load_state_dict(state['net'])
 
 predict(net, data['test'], checkpoints + "preds.csv")
 ```
+As well as this.
