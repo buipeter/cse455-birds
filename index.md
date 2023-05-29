@@ -9,7 +9,7 @@ The objective of this project is to develop a machine learning model capable of 
 
 # Introduction
 
-In our project, I initially utilized Google Colab as our working environment for a certain duration before transitioning to Jupyter Notebook. I selected the ResNet18 model as our initial pre-trained framework and later expanded our exploration by incorporating DenseNet161. For the actual training process, computation of loss values, and experimentation with various training techniques, I relied on the PyTorch Python library.
+In our project, I initially utilized Google Colab as our working environment for a certain duration before transitioning to Jupyter Notebook. I selected the ResNet18 model as our initial pre-trained framework and later expanded our exploration by incorporating ResNet18 algorithm. For the actual training process, computation of loss values, and experimentation with various training techniques, I relied on the PyTorch Python library.
 
 I decided to train and utilize a learning model to classify 10,000 images of birds from a dataset provided by the biannual [Bird Classification Kaggle Competition](https://www.kaggle.com/competitions/birds23sp/data). However, this begged the question: which model should I use to achieve a desired level of classification and how should I adjust this model to perform optimally and accurately?
 
@@ -73,7 +73,7 @@ def predict(net, dataloader, ofname):
             out.write("test/{},{}\n".format(fname.split('/')[-1], data['to_class'][predicted.item()]))
     out.close()
 
-net = torch.hub.load('pytorch/vision:v0.10.0', 'densenet161', pretrained=True)
+net = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
 net.fc = nn.Linear(512, 555)
 state = torch.load(checkpoints + 'checkpoint-10.pk1')
 net.load_state_dict(state['net'])
